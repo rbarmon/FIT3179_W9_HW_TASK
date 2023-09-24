@@ -9,17 +9,28 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
-
+  <title>FIT3179 W9 HW Task</title>
 </head>
 <body>
   <!-- test -->
   
 <div id="choropleth_map"></div>
 
+<div id="choropleth_map_1"></div>
+
+
 <script type="text/javascript">
 
   var spec2 = "js/choropleth_map.vg.json";
   vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec3 = "js/choropleth_map_1.vg.json";
+  vegaEmbed('#choropleth_map_1', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
